@@ -1,0 +1,150 @@
+/* Side Bar */
+
+// $Color4:#264143;
+// $Color6:#3b787c;
+// $Color5:#e99f4c;
+$Color4:#2A3F54;
+$Color5:#73879C;
+.fa-bars {
+    font-size: 26px;
+    position: absolute;
+    top: -1px;
+    right: -42px;
+    color: $Color5;
+    padding: 10px;
+    // border-radius: 5px;
+    // background-color: $Color4;
+    cursor: pointer;
+}
+
+.components li {
+    cursor: pointer;
+}
+
+.menu {
+    // padding-left: 0;
+    position: relative;
+    bottom: 4px;
+}
+
+.menu .brdr-bottom {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.p-top {
+    padding: 2px 0;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.navigation {
+    z-index: 1;
+    left: -250px;
+    // left: 0px;
+    top: -1px;
+    height: 100%;
+}
+
+.nav-display {
+    left: 0px;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    // background: #262933;
+    background: $Color4;
+    color: #fff;
+    transition: all 0.4s;
+    // height: 100vh;
+    // margin: 0 !important;
+    // padding: 0 !important;
+}
+
+#sidebar .sidebar-header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background: $Color5;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #262933;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: $Color5;
+    border-radius: 5px;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: $Color5;
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-width: height 100vh;
+    transition: all 0.4s;
+}
+
+#content h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#content p {
+    text-align: justify;
+}
+
+// @media (max-width: 768px) {
+//     #sidebar {
+//         margin-left: -250px;
+//     }
+//     #sidebar.active {
+//         margin-left: 0;
+//     }
+//     #sidebarCollapse span {
+//         display: none;
+//     }
+// }

@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    // padding: 0%;
+    // margin: 0%;
+    box-sizing: border-box;
+}
+
+html.open,
+body.open {
+    height: 100%;
+    overflow: hidden;
+}
+
+html {
+    // padding: 40px;
+    font-size: 62.5%;
+}
+
+body {
+    color: #73879C;
+    background: #F7F7F7;
+    font-size: 16px;
+}
+
+// h1 {
+//     // color: #4F4D53;
+//     font-size: 50px;
+//     font-weight: 600;
+// }
+// h2,
+// h3 {
+//     // color: #E8BE02;
+//     font-size: 26px;
+//     font-weight: 600;
+// }
+// h2 {
+//     font-size: 20px;
+// }
+// h4 {
+//     // color: #4F4D53;
+//     font-size: 20px;
+//     font-weight: 400;
+// }
+ul {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none !important;
+}
+
+.box-container {
+    padding: 20px 50px 0 !important;
+}
+
+.box {
+    left: 20px;
+}
+
+.app-container {
+    // width: 1200px !important;
+    height: 100% !important;
+}
+
+.view-port {
+    height: 100vh;
+}
+
+// @mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+//     // Common properties for all breakpoints
+//     %grid-column {
+//         position: relative;
+//         width: auto !important;
+//         padding-right: $gutter * .5;
+//         padding-left: $gutter * .5;
+//     }
+// }

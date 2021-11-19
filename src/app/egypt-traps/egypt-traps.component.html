@@ -1,0 +1,96 @@
+<!-- <div class="row w-100 justify-content-between "> -->
+<!-- <div class="col-md-2">
+        <app-side-bar></app-side-bar>
+    </div> -->
+
+<!-- <div class="col-md-9 my-5 mb-5 "> -->
+<div class="container">
+    <div class="my-5 shadow">
+        <app-map></app-map>
+    </div>
+    <div class="my-5 mb-5 bg-white shadow">
+        <div style="display: block;">
+            <canvas baseChart width="500" height="200" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [legend]="lineChartLegend" [chartType]="lineChartType" [plugins]="lineChartPlugins">
+                        </canvas>
+        </div>
+
+    </div>
+    <div class=" mt-5">
+        <main id="items">
+            <table>
+                <thead>
+                    <tr>
+                        <!-- <th>id</th> -->
+                        <th>seriaNumber</th>
+                        <th>trapsName</th>
+                        <th>working</th>
+                        <th>iema</th>
+                        <th>valveQut</th>
+                        <th>fan</th>
+                        <th>userName</th>
+                        <!-- <th>readingDate</th> -->
+                        <th>lat</th>
+                        <th>long</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let trap of traps">
+                        <!-- <td>{{trap.id}}</td> -->
+                        <td>{{trap.seriaNumber}}</td>
+                        <td>{{trap.trapsName}}</td>
+                        <td>{{trap.working}}</td>
+                        <td>{{trap.iema}}</td>
+                        <td>{{trap.valveQut}}</td>
+                        <td>{{trap.fan}}</td>
+                        <td>{{trap.userName}}</td>
+                        <!-- <td>{{trap.readingDate}}</td> -->
+                        <td>{{trap.lat}}</td>
+                        <td>{{trap.long}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <div class="float-right my-4">
+            <div (click)="exportItemPng()" class="ml-2 btn-p btn btn-secondary"><i class="fas fa-file-image"></i></div>
+            <div (click)="exportItemPdf()" class="ml-2 btn-p btn btn-danger"><i class="fas fa-file-pdf"></i></div>
+            <div (click)=" exportItemXlsx()" class="ml-2 btn-p btn btn-success"><i class="fas fa-file-excel"></i></div>
+            <div (click)=" exportItemTxt()" class="ml-2 btn-p btn btn-warning"><i class="fas fa-file-alt"></i></div>
+        </div>
+    </div>
+
+
+    <!-- <table class="styled-table">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>seriaNumber</th>
+                <th>trapsName</th>
+                <th>working</th>
+                <th>iema</th>
+                <th>valveQut</th>
+                <th>fan</th>
+                <th>userName</th>
+                <th>readingDate</th>
+                <th>lat</th>
+                <th>long</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let trap of traps">
+                <td>{{trap.id}}</td>
+                <td>{{trap.seriaNumber}}</td>
+                <td>{{trap.trapsName}}</td>
+                <td>{{trap.working}}</td>
+                <td>{{trap.iema}}</td>
+                <td>{{trap.valveQut}}</td>
+                <td>{{trap.fan}}</td>
+                <td>{{trap.userName}}</td>
+                <td>{{trap.readingDate}}</td>
+                <td>{{trap.lat}}</td>
+                <td>{{trap.long}}</td>
+            </tr>
+        </tbody>
+    </table> -->
+</div>
+<!-- </div> -->
+<!-- </div> -->

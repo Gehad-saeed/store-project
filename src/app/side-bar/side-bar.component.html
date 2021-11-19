@@ -1,0 +1,24 @@
+<!--Sid Bar-->
+<!-- <i class="fas fa-sliders-h"></i> -->
+<!-- <i class="fas fa-cog"></i> -->
+<!-- <i class="fas fa-bars"></i> -->
+<!-- <i (click)="toggle()" class="fas fa-cogs"></i> -->
+
+<nav id="sidebar" [class.nav-display]="toggleStyle" class="navigation position-relative py-5 col-md-2">
+    <i (click)="toggle()" class="fas fa-bars"></i>
+    <div class="sidebar-header">
+        <h3>SA-COUNTER</h3>
+    </div>
+    <ul class="lisst-unstyled components">
+        <li class="m-2 my-3" routerLink="/home">Dashboard</li>
+        <li class="m-2 my-3" routerLink="/trapManagement">Trap Management</li>
+        <li class="m-2 my-3" routerLink="/users">Users</li>
+        <li class="active my-3">
+            <a href="#foodSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Your Traps</a>
+            <ul class="collapse lisst-unstyled menu" id="foodSubmenu">
+                <li><a class="p-top" routerLink="/trapsInSaudiArabia">Trap in Saudi Arabia</a></li>
+                <li><a class="brdr-bottom" routerLink="/trapsInEgypt">Trap in Egypt</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
